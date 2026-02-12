@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bentiii 💖</title>
+
+<style>
+body{
+margin:0;
+font-family:sans-serif;
+background:linear-gradient(135deg,#ff9a9e,#fecfef,#ffc3a0);
+background-size:300% 300%;
+animation:gradient 8s ease infinite;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+h1{
+font-size:38px;
+margin-bottom:20px;
+}
+
+p{
+font-size:18px;
+line-height:1.7;
+max-width:500px;
+margin:auto;
+}
+
+button{
+padding:15px 40px;
+border:none;
+border-radius:40px;
+font-size:18px;
+margin:15px;
+background:white;
+color:#ff6b81;
+}
+
+button:active{
+transform:scale(0.95);
+}
+
+.heart{
+position:fixed;
+font-size:20px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-10vh);opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<h1>Hi Bentiii 💖</h1>
+
+<p>
+Bentiii 🥺💗<br><br>
+You are the sweetest part of my life.<br>
+Your smile makes everything better.<br>
+Your laugh is my favorite sound.<br><br>
+I don’t just want you for today…<br>
+I want you forever.<br><br>
+Will you be my Valentine? 💕
+</p>
+
+<button onclick="alert('YAYYY 🥰 I LOVE YOU BENTIII 💖')">Yes 💕</button>
+<button onclick="alert('Forever and Always 💍💖')">Yes Forever 💍</button>
+
+<script>
+function createHeart(){
+var heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="💗";
+heart.style.left=Math.random()*100+"vw";
+document.body.appendChild(heart);
+setTimeout(function(){heart.remove();},6000);
+}
+setInterval(createHeart,400);
+</script>
+
+</body>
+</html>
